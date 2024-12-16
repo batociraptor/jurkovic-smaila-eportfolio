@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela</title>
+    <link rel="stylesheet" href="css_datoteke/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-container">
+
+            <a href="index.html" class="back-button">&#8592;</a>
+            <h1>Gabriela Jurković</h1>
+
+        </div>
+
+        <nav>
+
+            <ul class="navigation" id="nav-list">
+
+                <li><a href="gabriela.html">Početna</a></li>
+                <li><a href="gabriela2.html"  class="active">Edukacija i Iskustvo</a></li>
+                <li><a href="gabriela3.html">Projekti</a></li>
+
+            </ul>
+    
+        </nav>
+
+    </header>
+
+    <div class="content-container">
+
+        <div class="education-block">
+
+            <h2>Edukacija</h2>
+            <p>Trenutno sam studentica pete godine na Fakultetu informatike i digitalnih tehnologija. Do sada sam ostvarivala dobar akademski uspjeh, a pregled mojeg akademskog uspjeha možete vidjeti na dijagramu dostupnom klikom na gumb ispod ovog teksta. Dodatno, možete vidjeti koje kolegije sam pohađala na kojoj godini klikom na stupac godine.</p>
+    
+            <div id="chart-section" style="display: none;">
+
+                <canvas id="gradeChart"></canvas>
+                <ul id="course-list" style="display: none;"></ul>
+
+            </div>
+
+            <button id="toggleChartButton">Prikaži dijagram</button>
+
+        </div>
+    
+        <div class="experience-block">
+
+            <h2>Iskustvo</h2>
+            <p>Tijekom fakultetskog obrazovanja naučila sam koristiti razne alate i programe. Izdvojila sam ih nekoliko koje posebno volim i u kojima sam najsnalažljivija.</p>
+            <button id="toggleTimelineButton">Prikaži programe</button>
+            <div id="timeline-container"></div>
+
+        </div>
+        
+    </div>
+    
+    
+    <script src="js_datoteke/scriptEIG.js"></script>
+
+</body>
+</html>
